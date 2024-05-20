@@ -18,5 +18,10 @@
       inherit (legacyPackages) circuitjs1;
     };
     defaultPackage = legacyPackages.circuitjs1;
+      devShells.default = legacyPackages.mkShell {
+        nativeBuildInputs = [
+          mvn2nix.packages.${system}.mvn2nix
+        ];
+      };
   });
 }
