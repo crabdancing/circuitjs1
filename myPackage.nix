@@ -8,7 +8,7 @@
 let
   mavenRepository = buildMavenRepositoryFromLockFile { file = ./mvn2nix-lock.json; };
 in stdenv.mkDerivation rec {
-  pname = "myMavenProject";
+  pname = "circuitjs1";
   version = "0.9.3";
   name = "${pname}-${version}";
   src = nix-gitignore.gitignoreSource [ "*.nix" ] ./.;

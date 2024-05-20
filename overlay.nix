@@ -1,4 +1,4 @@
 # overlay.nix
 final: prev: {
-  myMavenProject = final.callPackage ./myPackage.nix { };
+  circuitjs1 = final.callPackage ./myPackage.nix { };
 }
